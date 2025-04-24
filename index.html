@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <img src="images/icon.png" alt="App Icon" class="logo">
+        <h1 class="signup-text">Sign Up</h1>
+        <p class="subtitle">please fill the form to join us</p>
+        
+        <form id="signup-form" class="signup-form">
+            <div class="form-group">
+                <input type="text" id="username" name="username" class="text-input" placeholder="User name" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" id="email" name="email" class="text-input" placeholder="Email" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" id="password" name="password" class="text-input" placeholder="Password" required minlength="6">
+            </div>
+            
+            <div class="form-group">
+                <input type="password" id="confirm-password" name="confirm-password" class="text-input" placeholder="Confirm Password" required>
+            </div>
+            
+            <button type="submit" class="signup-button">Create Account</button>
+        </form>
+        
+        <div class="login-redirect">
+            <p class="login-text">You already have an account?</p>
+            <a href="login.html" class="login-link">Sign in</a>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
