@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Food</title>
+  <link rel="stylesheet" href="order.css">
+  <link rel="stylesheet" href="../nav.css">
+  <!-- <link rel="stylesheet" href="../home/home.css"> -->
+</head>
+<body>
+    <section class="first-section">
+        <header>
+            <nav>
+                <div>
+                    <img class="logo" src="../images/icon.png" alt="">
+                </div>
+                <div class="nav-elements" id="nav-elements">
+                    <h1><a href="../home/home.html">Home</a></h1>
+                    <h1><a href="./order.html">Order</a></h1>
+                    <h1><a href="../contact/contact.html">Contact</a></h1>
+                </div>
+                <div>
+                    <h1 class="order-button">Order Now</h1>
+                </div>
+            </nav>
+        </header>
+        <section class="order">
+            <div class="order-container">
+                <h1 class="order-title">Select Food</h1>
+        
+                <div class="food-list" id="food-list">
+                
+                </div>
+        
+                <div class="selected-items" id="selected-items"></div>
+        
+                <div class="order-summary">
+                <button class="unselect-btn" id="unselect-btn">Unselect All</button>
+                <p class="total-fee" id="total-fee">Estimated Total: 0 ብር</p>
+                </div>
+        
+                <div class="input-group">
+                <label for="dorm">Dorm Block</label>
+                <input type="text" id="dorm" placeholder="Enter dorm block" />
+                </div>
+        
+                <div class="input-group">
+                <label for="room">Room Number</label>
+                <input type="number" id="room" placeholder="Enter room number" />
+                </div>
+        
+                <button class="place-order-btn" id="place-order-btn">Place Order</button>
+            </div>
+        </section>
+    </section>
+
+  <script src="order.js"></script>
+</body>
+</html>
