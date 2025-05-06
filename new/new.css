@@ -172,7 +172,7 @@ a{
     object-fit: cover;
   }
   
-  /* Manual navigation indicators */
+  
   .navigation-manual {
     position: absolute;
     bottom: 20px;
@@ -191,7 +191,7 @@ a{
     transition: background 0.3s;
   }
   
-  /* Slide control via radio buttons */
+  
   #img1:checked ~ .s1 {
     margin-left: 0%;
   }
