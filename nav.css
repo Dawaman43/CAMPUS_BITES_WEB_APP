@@ -5,6 +5,8 @@ nav{
     text-align: center;
     align-items: center;
     width: 100%;
+    position: fixed;
+   
 }
 .logo{
     width: 6rem;
@@ -19,6 +21,7 @@ nav{
     padding: 10px;
     font-size: 0.7rem;
     text-decoration: none;
+    background-color: #10B249;
 }
 a{
     text-decoration: none;
