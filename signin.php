@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $errorMessage = !empty($_SESSION['error']) ? $_SESSION['error'] : '';
 ?>
 
@@ -8,7 +9,7 @@ $errorMessage = !empty($_SESSION['error']) ? $_SESSION['error'] : '';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="signup.css">
     <!-- <style>
         /* Modal styles */
@@ -96,7 +97,7 @@ $errorMessage = !empty($_SESSION['error']) ? $_SESSION['error'] : '';
                 <input type="text" id="username" name="username" class="text-input" placeholder="User name" required>
             </div>
             <div class="form-group">
-                <input type="email" id="email" name="email" class="text-input" placeholder="Email" required>
+                <input type="email" id="email" name="email" class="text-input" placeholder=" Enter Email" required>
             </div>
             <div class="form-group">
                 <input type="password" id="password" name="password" class="text-input" placeholder="Password" minlength="6" required>
