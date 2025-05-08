@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (validateLoginForm()) {
                 localStorage.setItem('isLoggedIn', 'true');
-                window.location.href = 'home.html';
+                window.location.href = './home/home.html';
             }
         });
         
