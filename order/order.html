@@ -6,55 +6,267 @@
   <title>Order Food</title>
   <link rel="stylesheet" href="order.css">
   <link rel="stylesheet" href="../nav.css">
-  <!-- <link rel="stylesheet" href="../home/home.css"> -->
+  <script src="./order.js"></script>
 </head>
 <body>
-    <section class="first-section">
-        <header>
-            <nav>
-                <div>
-                    <img class="logo" src="../images/icon.png" alt="">
-                </div>
-                <div class="nav-elements" id="nav-elements">
-                    <h1><a href="../home/home.html">Home</a></h1>
-                    <h1><a href="./order.html">Order</a></h1>
-                    <h1><a href="../contact/contact.html">Contact</a></h1>
-                </div>
-                <div>
-                    <h1 class="order-button">Order Now</h1>
-                </div>
-            </nav>
-        </header>
-        <section class="order">
-            <div class="order-container">
-                <h1 class="order-title">Select Food</h1>
-        
-                <div class="food-list" id="food-list">
-                
-                </div>
-        
-                <div class="selected-items" id="selected-items"></div>
-        
-                <div class="order-summary">
-                <button class="unselect-btn" id="unselect-btn">Unselect All</button>
-                <p class="total-fee" id="total-fee">Estimated Total: 0 ብር</p>
-                </div>
-        
-                <div class="input-group">
-                <label for="dorm">Dorm Block</label>
-                <input type="text" id="dorm" placeholder="Enter dorm block" />
-                </div>
-        
-                <div class="input-group">
-                <label for="room">Room Number</label>
-                <input type="number" id="room" placeholder="Enter room number" />
-                </div>
-        
-                <button class="place-order-btn" id="place-order-btn">Place Order</button>
-            </div>
-        </section>
+    
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="../images/icon.png" alt="Campus Bite Logo" class="logo">
+          <h1 class="brand-name">Campus<span>Bite</span></h1>
+        </div>
+        <div class="nav-links">
+          <a href="../home/home.html"><i class="fas fa-home"></i> Home</a>
+          <a href="./order.html" class="active"><i class="fas fa-utensils"></i> Order</a>
+          <a href="../about/about.html"><i class="fas fa-info-circle"></i> About Us</a>
+        </div>
+        <div class="nav-actions">
+          <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">3</span>
+          </div>
+          <a href="./order.html" class="order-btn">Order Now</a>
+        </div>
+      </nav>
+    </header>
+  
+    
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hungry? We've Got You Covered!</h1>
+        <p>Get your favorite campus meals delivered right to your dorm in minutes</p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for your favorite food...">
+          <button type="submit"><i class="fas fa-search"></i> Search</button>
+        </div>
+      </div>
     </section>
+  
+    
+    <section class="features">
+      <div class="section-title">
+        <h2>Why Choose Campus Bite?</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Fast Delivery</h3>
+          <p>Get your food delivered in under 30 minutes or it's free!</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-wallet"></i>
+          </div>
+          <h3>Affordable Prices</h3>
+          <p>Student-friendly prices that won't break your budget</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>We're here for you anytime, day or night</p>
+        </div>
+      </div>
+    </section>
+  
+    
+    <section class="menu">
+      <div class="menu-container">
+        <div class="section-title">
+          <h2>Our Delicious Menu</h2>
+        </div>
+        <div class="category-tabs">
+          <button class="category-btn active">All</button>
+          <button class="category-btn">Breakfast</button>
+          <button class="category-btn">Lunch</button>
+          <button class="category-btn">Dinner</button>
+          <button class="category-btn">Snacks</button>
+          <button class="category-btn">Drinks</button>
+        </div>
+        <div class="food-grid">
+          
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80" alt="Burger Meal" class="food-img">
+            <div class="food-info">
+              <h3 class="food-title">Classic Burger Meal</h3>
+              <p class="food-desc">Juicy beef patty with cheese, lettuce, and special sauce</p>
+              <div class="food-footer">
+                <span class="food-price">$8.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Salad" class="food-img">
+            <div class="food-info">
+              <h3 class="food-title">Fresh Garden Salad</h3>
+              <p class="food-desc">Mixed greens with cherry tomatoes, cucumber, and dressing</p>
+              <div class="food-footer">
+                <span class="food-price">$6.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1381&q=80" alt="Pizza" class="food-img">
+            <div class="food-info">
+              <h3 class="food-title">Pepperoni Pizza</h3>
+              <p class="food-desc">Classic pizza with mozzarella and spicy pepperoni</p>
+              <div class="food-footer">
+                <span class="food-price">$10.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Pasta" class="food-img">
+            <div class="food-info">
+              <h3 class="food-title">Creamy Alfredo Pasta</h3>
+              <p class="food-desc">Fettuccine pasta with rich alfredo sauce</p>
+              <div class="food-footer">
+                <span class="food-price">$9.49</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Donuts" class="food-img">
+            <div class="food-info">
+              <h3 class="food-title">Assorted Donuts</h3>
+              <p class="food-desc">Box of 6 delicious donuts with various toppings</p>
+              <div class="food-footer">
+                <span class="food-price">$5.99</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Smoothie" class="food-img">
+            <div class="food-info">
+              <h3 class="food-title">Tropical Smoothie</h3>
+              <p class="food-desc">Refreshing blend of mango, pineapple, and banana</p>
+              <div class="food-footer">
+                <span class="food-price">$4.49</span>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+    <section class="testimonials">
+      <div class="testimonials-container">
+        <div class="section-title">
+          <h2>What Students Say</h2>
+        </div>
+        <div class="testimonial-grid">
 
-  <script src="order.js"></script>
-</body>
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>Campus Bite saved me during finals week! I didn't have time to leave the library, and they delivered right to my study spot. The food was fresh and arrived super fast.</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="./images/user (1).png" alt="Sarah J." class="author-img">
+              <div class="author-info">
+                <h4>Blen Abisha</h4>
+                <p>Applied Biology</p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>As an international student, I really appreciate that they offer food from my home country. It's authentic and reminds me of home when I'm feeling homesick.</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="./images/user (1).png" alt="David K." class="author-img">
+              <div class="author-info">
+                <h4>Sena Temsgen</h4>
+                <p>Electronics and Communication Eng.</p>
+              </div>
+            </div>
+          </div>
+          
+         
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>The late-night delivery option is a game-changer! When I'm pulling an all-nighter, I can count on Campus Bite to keep me fueled with great food at reasonable prices.</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="./images/user (1).png" alt="Emily R." class="author-img">
+              <div class="author-info">
+                <h4>Biniam Mulat</h4>
+                <p>Software Engineering</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer-about">
+          <div style="display: flex; flex-direction: row; gap: 10px; text-align: center; align-items: center;">
+            <img src="../images/icon.png" alt="Campus Bite Logo" class="footer-logo">
+            <h1>CampusBite</h1>
+          </div>
+          <p>Campus Bite is your go-to food delivery service for college campuses. We bring the best local and campus dining options right to your dorm or study spot.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="./order.html">Order Now</a></li>
+            <li><a href="../about/about.html">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Food Categories</h3>
+          <ul>
+            <li><a href="#">Breakfast</a></li>
+            <li><a href="#">Lunch</a></li>
+            <li><a href="#">Dinner</a></li>
+            <li><a href="#">Snacks</a></li>
+            <li><a href="#">Drinks</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Campus Drive, University Town</p>
+          <p><i class="fas fa-phone-alt"></i> +251 234 567 89</p>
+          <p><i class="fas fa-envelope"></i> campusbite@gmail.com</p>
+          <p><i class="fas fa-clock"></i> Open 24/7 during semester</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Campus Bite. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
