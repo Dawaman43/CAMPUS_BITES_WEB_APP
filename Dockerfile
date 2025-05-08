@@ -4,14 +4,15 @@ FROM php:8.1-apache
 # Enable mod_rewrite for Apache
 RUN a2enmod rewrite
 
-# Copy the project files into the container
+# Install PostgreSQL PDO extension
+RUN apt-get update && apt-get install -y libpq-dev \
+    && docker-php-ext-install pdo pdo_pgsql
+
+# Copy your project files into the container
 COPY . /var/www/html/
 
-# Set working directory to the project folder
+# Set working directory
 WORKDIR /var/www/html
-
-# Install dependencies if needed (for example, if you use MySQL or other PHP extensions)
-RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 # Expose port 80 for Apache
 EXPOSE 80
