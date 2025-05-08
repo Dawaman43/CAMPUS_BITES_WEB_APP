@@ -2,227 +2,187 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <meta name="viewport" content="width=nav, initial-scale=1.0">
+    <title>CampusBite</title>
     <link rel="stylesheet" href="./home.css">
-    <link rel="stylesheet" href="../nav.css">   
-    <script src="./home.js" defer></script>
-</head>
+    <link rel="stylesheet" href="../nav.css">
 <body>
-    <section class="home-page">
+    <section class="section-0">
         <header>
             <nav>
                 <div>
-                    <img class="logo" src="../images/icon.png" alt="">
+                    <h1 class="logo">CampusBite</h1>
                 </div>
                 <div class="nav-elements">
-                    <h1><a href="./home.html">Home</a></h1>
+                    <h1><a href="../home/home.html">Home</a></h1>
                     <h1><a href="../order/order.html">Order</a></h1>
-                    <h1><a href="../contact/contact.html">Contact</a></h1>
+                    <h1><a href="./contact.html">Contact</a></h1>
                 </div>
                 <div>
                     <h1 class="order-button">Order Now</h1>
-                </div>
+                </div>    
             </nav>
         </header>
-        <div class="main-section">
-            <h1>Order Fresh Hot Meals Delivered To Your Door</h1>
-            <p>Enjoy delicious, chef-prepared meals without 
-                lifting a finger. hot, ready, and right on time.
-              </p>
-            <Button class="contact-button" onclick="location.href='../contact/contact.html'">Contact Us</Button>
-        </div>
+        <section class="section-1">
+            <div class="header-content">
+                <h1>Order Fresh Hot <Span class="logo">Meals <br> Delivered</Span> To Your Door</h1>
+                <p>Enjoy delicious, chef-prepared meals without <br>
+                    lifting a finger. hot, ready, and right on time.
+                </p>
+            </div>
+            <div class="header-buttons">
+                <button class="order-button2">Order Now</button>
+                <button class="learn-more-button">See Menu</button>
+            </div>
+        </section>
     </section>
     <section>
-        <section>
-            <div class="menu-section" id="real-menu" 
-            >
-              <h2>CampusBite Menu</h2>
-                <div class="menu-grid">
-                  <div class="menu-item">
-                    <img src="../images/food/egg-firfir.jpg" alt="Injera with Shiro">
-                    <h3>Egg Sliced</h3>
-                    <p class="desc">Classic Egg Siced with ingredients</p>
-                    <p class="price">ብር 120</p>
-                  </div>
-              
-                  <div class="menu-item">
-                    <img src="../images/food/firfir.jpg" alt="Misir Wot">
-                    <h3>Normal Firfir</h3>
-                    <p class="desc">Normal Firfir with Injera</p>
-                    <p class="price">ብር 140</p>
-                  </div>
-              
-                  <div class="menu-item">
-                    <img src="../images/food/keysir.jpg" alt="Beyaynetu">
-                    <h3>Keysir</h3>
-                    <p class="desc">Traditional Ethiopian Food</p>
-                    <p class="price">ብር 180</p>
-                  </div>
-              
-                  <div class="menu-item">
-                    <img src="../images/food/shiro.jpg" alt="Chechebsa">
-                    <h3>Shiro Wot</h3>
-                    <p class="desc">Home Made Shiro Feses</p>
-                    <p class="price">ብር 90</p>
-                  </div>
-              
-                  <div class="menu-item">
-                    <img src="../images/food/meat.jpg" alt="Firfir">
-                    <h3>Meat Wot</h3>
-                    <p class="desc">Delicious Red Meat Wot</p>
-                    <p class="price">ብር 100</p>
-                  </div>
-              
-                  <div class="menu-item">
-                    <img src="../images/food/mixed.jpg" alt="Macaroni">
-                    <h3>Beyaynetu</h3>
-                    <p class="desc">Mixed Ethipian Foods</p>
-                    <p class="price">ብር 130</p>
-                  </div>
-                  <div class="menu-item">
-                    <img src="../images/food/shekla-tibs.jpg" alt="Macaroni">
-                    <h3>Tibs</h3>
-                    <p class="desc">Grilled Ethiopian Meat.</p>
-                    <p class="price">ብር 200</p>
-                  </div>
-                  <div class="menu-item">
-                    <img src="../images/food/gomen.jpg" alt="Macaroni">
-                    <h3>Gomen Wot</h3>
-                    <p class="desc">Simple and filling Gomen Wot</p>
-                    <p class="price">ብር 80</p>
-                  </div>
-                  <div class="menu-item">
-                    <img src="../images/food/chechebsa.jpg" alt="Macaroni">
-                    <h3>Chechebsa</h3>
-                    <p class="desc">Traditional Ethiopian food called Chechebsa</p>
-                    <p class="price">ብር 100</p>
-                  </div>
-                  <div class="menu-item">
-                    <img src="../images/food/firfir2.jpg" alt="Macaroni">
-                    <h3>Firfir</h3>
-                    <p class="desc">Firfir with yellowish erd flavour</p>
-                    <p class="price">ብር 100</p>
-                  </div>
+        <section class="slider-section">
+            <div class="slider">
+              <div class="slides">
+                <input type="radio" name="radio-btn" id="img1" checked>
+                <input type="radio" name="radio-btn" id="img2">
+                <input type="radio" name="radio-btn" id="img3">
+          
+                <div class="slide s1">
+                  <img src="../images/Recipes/ella-olsson-kKLRvcjQNqM-unsplash.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="../images/Recipes/gebiya-putri-IzdLRdXcNT8-unsplash.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="../images/Recipes/s-o-c-i-a-l-c-u-t-hwy3W3qFjgM-unsplash.jpg" alt="">
+                </div>
+          
+                <div class="navigation-manual">
+                  <label for="img1" class="manual-btn"></label>
+                  <label for="img2" class="manual-btn"></label>
+                  <label for="img3" class="manual-btn"></label>
                 </div>
               </div>
             </div>
           </section>
-          
-          
     </section>
-    <section class="page-us">
-        <div class="page-content">
-            <div class="page-left">
-                <h2>Who We are</h2>
-                <h1>We are CampusBite</h1>
-                <p>Campus Bites is a mobile application that <br> 
-                    streamlines food ordering and delivery <br>
-                    services for students and staff within <br>
-                    campus environments. It connects users <br>
-                    to nearby partner hotels and food vendors, <br>
-                    enabling convenient, fast, and affordable <br>
-                    meal access right from their smartphones.<br>
-                </p>
-                <h3><a href="">Learn More-></a></h3>
-            </div>
-            <div class="page-right">
-                <img src="../images/grab-W_UiSLqthaU-unsplash.jpg" alt="">
-            </div>
-        </div>
-        <div class="page-content">
-            <div class="page-left">
-                <h2>What We Do</h2>
-                <h1>CampusBite</h1>
-                <p>Campus Bites is an innovative mobile <br>
-                    application designed to enhance the <br>
-                    dining experience for students and staff<br> 
-                    within campus environments. By bridging <br>
-                    the gap between users and nearby partner <br>
-                    hotels or food vendors, the app provides<br>
-                    a seamless way to browse menus, place <br>
-                    orders, and get meals delivered with <br>
-                    minimal hassle.<br>
-                </p>
-                <h3><a href="">Learn More-></a></h3>
-            </div>
-            <div class="page-right">
-                <img src="../images/cardmapr-nl-ThpyYkbL0-0-unsplash (2).jpg" alt="">
-        </div>
-    </section>
-    <section>
+    <section class="section-2">
+      <h1 class="features-title">Features</h1>
+      <h1 class="features-heading">Why Choose <span class="logo">Campus Bite</span>?</h1>
+      <p class="features-para">From customizable plans to expert lifestyle support,<br>
+          discover the features that make healthy eating easy and enjoyable.</p>
         <div class="features">
-            <div class="feat">
-                <h3>Fast Food Delivery</h3>
-                <img class="icon" src="../icons/thunder.png" alt="">
-                <p>Get Your Favourite meals delivered in 
-                    minutes without leaving your dorm 
-                </p>
+            <div class="feat-item">
+                <h1 class="feat-content">Fast & Fresh <span class="logo">Delivery</span></h1>
+                <div class="hl"></div>
+                <p>Skip the cafeteria lines. Get your favorite
+                    campus meals delivered hot and fresh in minutes.</p>
             </div>
-            <div class="feat">
-                <h3>Budget-friendly Options</h3>
-                <img class="icon" src="../icons/wallet-filled-money-tool.png" alt="">
-                <p>Afforadable melas tailored for students-no need to break 
-                    the bank.
-                </p>
+            <div class="feat-item">
+                <h1 class="feat-content">Student-Friendly <span class="logo">Prices</span></h1>
+                <div class="hl"></div>
+                <p>Enjoy delicious meals without breaking your budget. 
+                    Exclusive student discounts every day!</p>
             </div>
-            <div class="feat">
-                <h3>Track your Order Live</h3>
-                <img class="icon" src="../icons/pin.png" alt="">
-                <p>Real-time tracking so you know exactly when your food
-                    arrives
-                </p>
+            <div class="feat-item">
+                <h1 class="feat-content">Variety of <span class="logo">Choices</span></h1>
+                <div class="hl"></div>
+                <p>From local favorites to international dishes—Campus Bite 
+                    brings a wide range of cuisines right to your dorm.</p>
+            </div>
+            <div class="feat-item">
+                <h1 class="feat-content">Order <span class="logo">Tracking</span></h1>
+                <div class="hl"></div>
+                <p>Stay in the loop! Track your food in real-time, 
+                    from kitchen prep to doorstep delivery.</p>
             </div>
         </div>
-    </section>
-    <section>
+      </section>
+      <section class="section-3">
+        <h1 class="discover-title">Menu</h1>
+        <div class="menu">
+            <h1 class="menu-title">Discover Our Menu</h1>
+            <p class="menu-para">Explore the flavors that fit your lifestyle—dive <br> 
+              into the Campus Bite menu and find your next favorite meal.</p>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="../images/food/egg-firfir.jpg" alt="">
+                    <h1><a href="">BreakFast</a></h1>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/food/shiro.jpg" alt="">
+                    <h1><a href="">Lunch</a></h1>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/food/mixed.jpg" alt="">
+                    <h1><a href="">Dinner</a></h1>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="pricing">
+        <h1 class="pricing-title">Pricing</h1>
+        <div class="pricing-header">
+          <h1>Flexible Plan <br> <span class="logo">For Every Student</span></h1>
+          <p>Choose the plan that fits your lifestyle—whether 
+            you're a light snacker or a daily foodie, 
+            <br>Campus Bite has flexible options made for your 
+            campus routine. Eat smart, save more, and snack 
+            on your terms.</p>
+        </div>
         <div class="pricing-plans">
-            <div class="plan">
-              <h3>Injera Basic</h3>
-              <p class="price">ብር 120</p>
-              <ul>
-                <li>1 Injera with Shiro</li>
-                <li>Pickup Only</li>
-                <li>No Customizations</li>
-              </ul>
-            </div>
-          
-            <div class="plan popular">
-              <h3>Student Combo</h3>
-              <p class="price">ብር 180</p>
-              <ul>
-                <li>Injera with Misir & Dinich</li>
-                <li>Free Campus Delivery</li>
-                <li>Track Your Order</li>
-              </ul>
-            </div>
-          
-            <div class="plan">
-              <h3>Habesha Feast</h3>
-              <p class="price">ብር 250</p>
-              <ul>
-                <li>Injera with Beyaynetu</li>
-                <li>Priority Delivery</li>
-                <li>Custom Spices & Portions</li>
-              </ul>
-            </div>
+          <div class="plan">
+            <h4>Basic<br>749 birr</h4>
+            <ul>
+              <li>1 week package</li>
+              <li>3 meals per day</li>
+              <li>Choose preferred menu</li>
+              <li>1 day detox Juice cleanse</li>
+              <li>Lifestyle advice</li>
+            </ul>
+            <button>Get plan</button>
           </div>
-    </section>
-    <section>
-        <div class="contact-social">
-            <div class="contact">
-              <h3>Contact Us</h3>
-              <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-              </form>
-            </div>
+          <div class="plan highlight">
+            <h4>Starter<br>1540 birr</h4>
+            <ul>
+              <li>2 week package</li>
+              <li>3 meals per day</li>
+              <li>Choose preferred menu</li>
+              <li>1 day detox Juice cleanse</li>
+              <li>Lifestyle advice</li>
+            </ul>
+            <button>Get plan</button>
           </div>
-          
-    </section>
-    <footer class="footer">
+          <div class="plan">
+            <h4>Pro<br>3000 birr</h4>
+            <ul>
+              <li>1 week package</li>
+              <li>3 meals per day</li>
+              <li>Choose preferred menu</li>
+              <li>1 day detox Juice cleanse</li>
+              <li>Lifestyle advice</li>
+            </ul>
+            <button>Get plan</button>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div>
+          <p>Subscribe to our newsletters and get 10% discount on your first week ration</p>
+          <form>
+            <input type="email" placeholder="Your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <!-- <img src="../images/newletter/christian-wiediger-GWkioAj5aB4-unsplash.jpg" alt="Newsletter dish"> -->
+      </section>
+    
+      <section class="extras">
+        <h3>What else we can offer you</h3>
+        <div class="extras-items">
+          <div><img src="../images/Recipes/ella-olsson-kKLRvcjQNqM-unsplash.jpg"><p>Recipes</p></div>
+          <div><img src="../images/Recipes/gebiya-putri-IzdLRdXcNT8-unsplash.jpg"><p>Home workouts</p></div>
+          <div><img src="../images/Recipes/s-o-c-i-a-l-c-u-t-hwy3W3qFjgM-unsplash.jpg"><p>Accessories</p></div>
+        </div>
+      </section>
+      <footer class="footer">
         <div class="footer-container">
           <div class="footer-col">
             <h2 class="footer-logo">CampusBite</h2>
@@ -257,6 +217,5 @@
         </div>
         <p class="footer-bottom">&copy; 2025 CampusBite. All rights reserved.</p>
       </footer>
-      
 </body>
 </html>

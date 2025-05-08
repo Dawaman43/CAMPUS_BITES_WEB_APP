@@ -5,14 +5,11 @@ nav{
     text-align: center;
     align-items: center;
     width: 100%;
-    margin: 10px;
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+   
 }
 .logo{
-    color: #14d658e2;
+    width: 6rem;
 }
 .nav-elements{
     display: flex;
@@ -24,21 +21,29 @@ nav{
     padding: 10px;
     font-size: 0.7rem;
     text-decoration: none;
+    background-color: #10B249;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1rem;
     font-weight: lighter;
     border-radius: 50px;
     padding: 10px;
     transition: all 0.3s ease-in-out;
 }
+
 .order-button{
-    color: black;
-    border: 1.5px solid black;
+    color: white;
+    background-color: #10B249;
     padding: 5px 20px;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 600;
+}
+.order-button:hover{
+    background-color: #0a8b3c;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
