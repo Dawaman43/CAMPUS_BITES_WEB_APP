@@ -20,21 +20,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($username) || empty($email) || empty($password) || empty($confirm_password) || empty($role)) {
         $_SESSION['error'] = "All fields are required.";
         error_log("Validation failed: Missing fields");
-        header("Location: ../index.php");
+        header("Location: ../signup.php");
         exit();
     }
 
     if ($password !== $confirm_password) {
         $_SESSION['error'] = "Passwords do not match.";
         error_log("Validation failed: Passwords do not match");
-        header("Location: ../index.php");
+        header("Location: ../signup.php");
         exit();
     }
     
     if (strlen($password) < 6) {
         $_SESSION['error'] = "Password must be at least 6 characters long.";
         error_log("Validation failed: Password too short");
-        header("Location: ../index.php");
+        header("Location: ../signup.php");
         exit();
     }
 
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!in_array($role, $valid_roles)) {
         $_SESSION['error'] = "Invalid role selected: " . htmlspecialchars($role);
         error_log("Validation failed: Invalid role - " . $role);
-        header("Location: ../index.php");
+        header("Location: ../signup.php");
         exit();
     }
 
@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($count > 0) {
             $_SESSION['error'] = "Email already exists.";
             error_log("Validation failed: Email already exists - " . $email);
-            header("Location: ../index.php");
+            header("Location: ../signup.php");
             exit();
         }
 
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($saved_role !== $role) {
             $_SESSION['error'] = "Error: Role was not saved correctly. Expected $role, got $saved_role.";
             error_log("Role mismatch: Expected $role, got $saved_role");
-            header("Location: ../index.php");
+            header("Location: ../signup.php");
             exit();
         }
 
@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } catch (PDOException $e) {
         $_SESSION['error'] = "Error registering user: " . $e->getMessage();
         error_log("Database error: " . $e->getMessage());
-        header("Location: ../index.php");
+        header("Location: ../signup.php");
         exit();
     }
 }
