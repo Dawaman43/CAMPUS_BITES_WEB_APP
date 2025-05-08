@@ -31,12 +31,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
             $_SESSION['email'] = $user['email'];
+            $_SESSION['role'] = $user['role']; // Store role in session
 
             // Regenerate session ID for security
             session_regenerate_id(true);
 
-            // Redirect to dashboard
-            header("Location: ../new/new.html");
+            // Redirect based on user role
+            switch ($user['role']) {
+                case 'student':
+                    header("Location: ../students/student_home.php");
+                    break;
+                case 'delivery':
+                    header("Location: ../managers/home.html");
+                    break;
+                case 'manager':
+                    header("Location: ../delivery/delivery_home.php");
+                    break;
+                default:
+                    // Fallback for unrecognized roles
+                    $_SESSION['error'] = "Invalid user role.";
+                    header("Location: ../login.php");
+                    break;
+            }
             exit();
         } else {
             // Store error message in session for display
