@@ -1,20 +1,30 @@
+:root {
+    --primary-green: #10B249;
+    --dark-green: #0E9A3F;
+    --black: #121212;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --text-gray: #555;
+    --section-padding: 6rem 2rem;
+    --container-width: 1200px;
+  }
+
 nav{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    margin: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: var(--black);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .logo{
     color: #14d658e2;
 }
-.nav-elements{
+.nav-elements ul{
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -24,21 +34,26 @@ nav{
     padding: 10px;
     font-size: 0.7rem;
     text-decoration: none;
+    list-style: none;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1rem;
     font-weight: lighter;
     border-radius: 50px;
     padding: 10px;
     transition: all 0.3s ease-in-out;
 }
-.order-button{
-    color: black;
-    border: 1.5px solid black;
-    padding: 5px 20px;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 600;
+.sign-log{
+    width: 30px;
+    filter: brightness(0) invert(1);
+    
+    margin: 0;
+}
+
+.sign-log:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
 }

@@ -24,8 +24,8 @@ body {
 /* Header & Navigation */
 header {
   background-color: var(--black);
-  padding: 1rem 2rem;
-  padding-bottom: -5px;
+  padding: 1rem 1rem;
+  
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -34,10 +34,10 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  
 }
 
 .logo-container {
@@ -112,7 +112,7 @@ header {
 .order-btn {
   background-color: var(--primary-green);
   color: var(--white);
-  padding: 0.6rem 1.5rem;
+  padding: 5px 10px;
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;

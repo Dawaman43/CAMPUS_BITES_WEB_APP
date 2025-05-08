@@ -1,111 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us</title>
-  <link rel="stylesheet" href="about.css"/>
-  <link rel="stylesheet" href="../nav.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Campus Bite</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./about.css">
 </head>
 <body>
-  <section class="main-section">
-    <header>
-      <nav>
-          <div>
-              <h1 class="logo">CampusBite</h1>
-          </div>
-          <div class="nav-elements">
-              <h1><a href="../home/home.html">Home</a></h1>
-              <h1><a href="../order/order.html">Order</a></h1>
-              <h1><a href="../about/about.html">About Us</a></h1>
-          </div>
-          <div>
-              <h1 id="order-button" class="order-button">Order Now</h1>
-          </div>    
-      </nav>
-    </header>
-    <div class="header-content">
-      <h1>Your Gateway <br>to Campus Life</h1>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Campus<span>Bite</span></div>
+    <div class="nav-links">
+      <a href="../home/home.html">Home</a>
+      <a href="../order/order.html">Order</a>
+      <a href="../about/about.html" class="active">About Us</a>
+    </div>
+    <a href="../order/order.html" class="order-btn">
+      <i class="fas fa-bolt"></i> Order Now
+    </a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>More Than Just Food Delivery</h1>
+      <p>We're your campus dining revolution</p>
+    </div>
   </section>
 
+  <!-- About Section -->
   <section class="about-section">
-    <h1 class="about-header">Our Story</h1>
-    <p class="about-para">At Campus Bite, we know how hectic <br> 
-      student life can be—between classes, exams, and <br>
-      late-night study sessions, who has time to wait <br>
-      in long cafeteria lines or cook? That’s why we <br>
-      created a student-focused food delivery app that brings <br>
-      your favorite campus meals right to your doorstep! <br>
-      <span class="about-para2">We’re not just about food; we’re about <br>
-        At Campus Bite, we believe good food brings people <br>
-      together. That’s why we’re not just an app—we’re <br>
-      part of your college experience! From hosting <br>
-      meal-sharing events to offering exclusive student <br>
-      discounts, we’re here to make campus life easier <br>
-      (and tastier). Whether you're fueling up for a 3 <br>
-      AM study grind or grabbing lunch between lectures, <br>
-      we’ve got your back. Because when students thrive, <br>
-      we thrive—let’s eat, connect, and conquer!
-      </span>
-    </p>
-    <div class="container" style="display: none;">
-      
-      <h2>About Us</h2>
-      <p>
-        Campus Bites is your go-to food ordering and delivery solution within campus. We partner with local hotels and eateries to bring delicious meals straight to your dorm or department. Built by students, for students — we aim to simplify your daily life through tech.
-      </p>
+    <div class="section-header">
+      <h2 class="section-title">Our Story</h2>
+      <p class="section-subtitle">How Campus Bite became the go-to food solution for students</p>
+    </div>
 
-      <div class="features">
-        <div class="feature-card">
-          <h3>Fast Delivery</h3>
-          <p>Get your meals delivered in under 30 minutes.</p>
+    <div class="about-content">
+      <div class="about-text">
+        <p>At <span class="highlight">Campus Bite</span>, we know how hectic student life can be—between classes, exams, and late-night study sessions, who has time to wait in long cafeteria lines or cook?</p>
+        
+        <p>That's why we created a <span class="highlight">student-focused food delivery app</span> that brings your favorite campus meals right to your doorstep! Founded in 2023 by a group of university students who were tired of missing meals during crunch times, we've grown to serve thousands of students across multiple campuses.</p>
+        
+        <p>We're not just about food; we're about <span class="highlight">community, convenience, and student success</span>. By partnering with campus dining services and local restaurants, we're able to offer diverse meal options at student-friendly prices.</p>
+      </div>
+      
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Campus Bite Team">
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission-section">
+    <div class="mission-container">
+      <div class="mission-card">
+        <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+        <p>To revolutionize campus dining by providing fast, affordable, and reliable food delivery services that help students focus on what really matters - their education and campus experience.</p>
+      </div>
+      
+      <div class="mission-card">
+        <h3><i class="fas fa-eye"></i> Our Vision</h3>
+        <p>To become the essential campus life platform, connecting students with all the dining options they need while supporting local businesses and creating student employment opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-number">10,000+</div>
+        <div class="stat-label">Happy Students</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Campus Partners</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Support</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">30 min</div>
+        <div class="stat-label">Avg. Delivery</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="section-header">
+      <h2 class="section-title">Meet The Team</h2>
+      <p class="section-subtitle">The students and professionals behind Campus Bite</p>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-image">
+          <img src="../order/images/user (1).png" alt="Sarah Johnson">
         </div>
-        <div class="feature-card">
-          <h3>Trusted Partners</h3>
-          <p>We collaborate only with verified and quality food vendors.</p>
+        <div class="team-info">
+          <h4>Dawit Worku</h4>
+          <p>Backend Designer</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
-        <div class="feature-card">
-          <h3>Easy Payments</h3>
-          <p>Pay easily via mobile money or in-app wallet.</p>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-image">
+          <img src="../order/images/user (1).png" alt="Michael Chen">
+        </div>
+        <div class="team-info">
+          <h4>Chala Temesgen</h4>
+          <p>Quality Assurance</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-image">
+          <img src="../order/images/user (1).png" alt="Aisha Mohammed">
+        </div>
+        <div class="team-info">
+          <h4>Tomas Melesse</h4>
+          <p>Frontend Designer</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-image">
+          <img src="../order/images/user (1).png" alt="David Kim">
+        </div>
+        <div class="team-info">
+          <h4>Wubgzher Alemayehu</h4>
+          <p>Backend Designer</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
+  <!-- Footer -->
+  <footer>
     <div class="footer-container">
-      <div class="footer-col">
-        <h2 class="footer-logo">CampusBite</h2>
-        <p>Your go-to meal partner on campus. Fast, affordable, and delicious Ethiopian food delivered to students.</p>
+      <div class="footer-col footer-about">
+        <h3>About CampusBite</h3>
+        <p>Your go-to meal partner on campus. Fast, affordable, and delicious food delivered to students across multiple universities.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
       </div>
 
       <div class="footer-col">
         <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="footer-links">
+          <li><a href="../home/home.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="../order/order.html"><i class="fas fa-chevron-right"></i> Order</a></li>
+          <li><a href="../about/about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="../contact/contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
         </ul>
       </div>
-  
+
       <div class="footer-col">
-        <h3>Contact Us</h3>
-        <p>Email: campusbite@gmail.com</p>
-        <p>Phone: +251 912 345 678</p>
-        <p>Location: Adama, Ethiopia</p>
+        <h3>Food Categories</h3>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Breakfast</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Lunch</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Dinner</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Late Night</a></li>
+        </ul>
       </div>
-  
-      <div class="footer-col">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-          <a href="#"><img src="../icons/socials/facebook (1).png" alt="Facebook"></a>
-          <a href="#"><img src="../icons/socials/twitter.png" alt="Twitter"></a>
-          <a href="#"><img src="../icons/socials/instagram.png" alt="Instagram"></a>
-        </div>
+
+      <div class="footer-col footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Campus Drive, University District</p>
+        <p><i class="fas fa-phone-alt"></i> +251 912 345 678</p>
+        <p><i class="fas fa-envelope"></i> hello@campusbite.com</p>
+        <p><i class="fas fa-clock"></i> 24/7 during semester</p>
       </div>
     </div>
-    <p class="footer-bottom">&copy; 2025 CampusBite. All rights reserved.</p>
+
+    <div class="copyright">
+      &copy; 2023 CampusBite. All rights reserved.
+    </div>
   </footer>
 </body>
 </html>

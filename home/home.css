@@ -1,3 +1,14 @@
+:root {
+  --primary-green: #10B249;
+  --dark-green: #0E9A3F;
+  --black: #121212;
+  --white: #ffffff;
+  --light-gray: #f8f9fa;
+  --text-gray: #555;
+  --section-padding: 6rem 2rem;
+  --container-width: 1200px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -31,9 +42,30 @@ html{
 
 /* nav css */
 
-.logo{
-    width: 6rem;
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.logo1 {
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.brand-name {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.brand-name span {
+  color: var(--primary-green);
+}
+
+/* .logo1{
+    width: 6rem;
+} */
 
 /* section-1 */
 
