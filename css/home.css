@@ -376,6 +376,7 @@ a{
       min-height: 100%;
   }
   .menu-item img{
+    
       width: 100%;
       height: 70vh;
       border-radius: 20px;
@@ -762,6 +763,48 @@ a{
   }
 }
 
+
+@media (min-width: 768px) {
+  .nav-elements {
+    display: flex !important;
+  }
+  .mobile-menu-btn {
+    display: none !important;
+  }
+  .features {
+    flex-wrap: wrap;
+  }
+  .feat-item {
+    min-width: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .features {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  .feat-item {
+    min-width: auto;
+    flex: 1;
+  }
+
+  .pricing-plans {
+    flex-direction: row;
+  }
+  .plan {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  body > *:not(.section-0) {
+    max-width: 1400px;
+    margin: 80px auto;
+  }
+}
+
 @media (max-width: 576px) {
   body > *:not(.section-0) {
     margin: 30px 20px;
@@ -905,98 +948,3 @@ a{
 
 
 
-/* @media (min-width: 768px) and (max-width: 992px) {
-  nav {
-    padding: 0.8rem 1rem;
-  }
-  
-  .logo1 {
-    height: 35px;
-  }
-  
-  .brand-name {
-    font-size: 1.3rem;
-  }
-  
-  .nav-elements ul {
-    gap: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .header-content h1 {
-    font-size: 3.5rem;
-  }
-  
-  .header-content p {
-    font-size: 1rem;
-  }
-  
-  .header-buttons {
-    gap: 15px;
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .features {
-    gap: 15px;
-  }
-  
-  .feat-item {
-    min-width: 45%;
-  }
-  
-  .feat-item h1 {
-    font-size: 1.8rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .menu-items {
-    gap: 15px;
-  }
-  
-  .menu-item img {
-    height: 50vh;
-  }
-  
-  .pricing-plans {
-    gap: 15px;
-  }
-  
-  .plan {
-    width: 45%;
-  }
-}
-
-@media (min-width: 1200px) {
-  body > *:not(.section-0) {
-    max-width: 1400px;
-    margin: 80px auto;
-  }
-  
-  .features {
-    gap: 30px;
-  }
-  
-  .menu-items {
-    gap: 30px;
-  }
-  
-  .pricing-plans {
-    gap: 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .header-content h1 {
-    font-size: 5rem;
-    max-width: 80%;
-  }
-  
-  .header-content p {
-    font-size: 1.2rem;
-    max-width: 70%;
-  }
-} */
